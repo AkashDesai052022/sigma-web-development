@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selector */
+        div{
+            color: red;
+        }
+        /* class selector */
+        .red{
+            color: red;
+        }
+        /* id selector */
+        #para{
+            color: green;
+        }
+        /* child selector */
+        p > em{
+            color: blue;
+        }
+        /* Descendant selector */
+        p i{
+            color: yellow;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* psuedo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            color: red;
+        }
+        a:link{
+            color: blue
+        }
+        a:hover{
+            color: maroon
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red" >CSS selectors</h1>
+    <div>
+        Hey, I am div
+    </div>
+    <div class="green ">
+        I am also anohter div
+    </div>
+    <p id="para">
+        <em> Hi</em>, <i>I am para</i></p>
+        <a href="http://www.google.com">Go to Google</a>
+        <a href="http://www.yahoo.com">Go to yahoo</a>
+</body>
+</html>
