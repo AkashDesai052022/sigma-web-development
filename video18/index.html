@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box modal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: aqua;
+      }
+      .box1 {
+        padding: 10px;
+        border: 2px solid red;
+        margin: 35px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      .box2 {
+        padding: 10px;
+        border: 2px solid black;
+        margin: 25px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      /* here concept of margin collapse 
+      if 2 boxes having margins then the box contain high margin it will be considerd and min margin will not be considered.
+      box 1 (m:20px)  and box 2 (m:30px) then box 2 margin will be considered between the boxes */
+    </style>
+  </head>
+  <body>
+    <div class="box box1">I am box</div>
+    <div class="box box2">I am another box</div>
+  </body>
+</html>
