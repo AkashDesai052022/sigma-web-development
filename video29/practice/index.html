@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change theme</title>
+    <style>
+        .box{
+            display: flex; 
+            justify-content: center;
+             align-items: center;
+             height: 100vh;
+        }
+        .btn{
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="btn" id="theme">change theme</button>
+    </div>
+</body>
+<script>
+    const a = document.getElementById("theme")
+    a.addEventListener('click', myfunc)
+
+    function myfunc(){
+        let x = Math.floor(Math.random() * 255) 
+        let y = Math.floor(Math.random() * 255)
+        let z = Math.floor(Math.random() * 255)
+        document.body.style.backgroundColor = "rgb("+x+" , "+y+" , "+z+")";
+        console.log(x,y,z)
+    }
+</script>
+</html>
