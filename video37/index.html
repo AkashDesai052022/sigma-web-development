@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design this layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", serif;
+      }
+      div nav ul li {
+        list-style: none;
+        font-size: 16px;
+        padding: 23px;
+      }
+      div nav ul {
+        display: flex;
+      }
+      body {
+        background-color: beige;
+      }
+      nav {
+        background-color: rgb(233, 160, 70);
+      }
+      .boxes {
+        display: flex;
+        justify-content: space-around;
+      }
+      .box {
+        height: 605px;
+        width: 534px;
+        background-color: rgba(76, 121, 121, 0.307);
+        border: 2px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content {
+        width: 943px;
+        height: 234px;
+        border: 2px solid black;
+        border-radius: 23px;
+        box-sizing: border-box;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        /* flex-direction: column; */
+        font-size: 40px;
+        margin: 34px 190px;
+        /* trbl  */
+        padding: 23px 20px 20px 23px;
+      }
+       div img{
+        padding-left: 1340px;
+        position: fixed;
+      }
+      footer{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="boxes">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+    </div>
+    <div class="logo">
+      <img
+        src="https://yt3.googleusercontent.com/ytc/AIdro_kX3sdbuu3KFmRPsmlu0R5Rx_BhpxwupjtvJmkEdNfla7w=s900-c-k-c0x00ffffff-no-rj"
+        width="34px"
+        alt=""
+      />
+    </div>
+    <div class="content">
+      <p>Welcome to Sigma Web Development Express</p>
+    </div>
+    <footer>Copyright reserved</footer>
+  </body>
+</html>
