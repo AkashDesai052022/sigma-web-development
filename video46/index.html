@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .container {
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        background-color: blueviolet;
+        height: 89px;
+        width: 89px;
+        border-radius: 60px;
+/* 
+        animation: harryBhai;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        we can set count to infinite
+        animation-timing-function: cubic-bezier(1, 0.08, 0.87, 0.96);
+        animation-direction: alternate-reverse; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: harryBhai 0.7s cubic-bezier(1, 0.08, 0.87, 0.96) none infinite alternate-reverse;
+      }
+      @keyframes harryBhai {
+        from {
+          transform: translateX(0);
+          background-color: black;
+        }
+        to {
+            transform: translateY(150px);
+            background-color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
