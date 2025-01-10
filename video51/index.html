@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sollution</title>
+    <style>
+      .container {
+        position: relative;
+        background-color: aquamarine;
+        height: 90vh;
+        width: 90vw;
+      }
+      .box {
+        background-color: blueviolet;
+        height: 89px;
+        width: 89px;
+        border-radius: 6px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+/* 
+        animation: harryBhai;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        we can set count to infinite
+        animation-timing-function: cubic-bezier(1, 0.08, 0.87, 0.96);
+        animation-direction: alternate-reverse; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: harryBhai 0.7s cubic-bezier(1, 0.08, 0.87, 0.96) none infinite alternate-reverse; */
+        animation: animateX 3s linear infinite ,  animateY 1s ease infinite alternate;
+        /* animation: animateY 1s ease-out infinite alternate;  */
+        
+      }
+      /* @keyframes harryBhai {
+        from {
+          transform: translateX(0);
+          background-color: black;
+        }
+        to {
+            transform: translateY(150px);
+            background-color: #fff;
+        }
+      } */
+      @keyframes animateX {
+        from{
+            left:0;
+        }
+        to{
+            left:100%;
+        }
+      }
+      @keyframes animateY {
+        from{
+            bottom:0;
+        }
+        to{
+            bottom:100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
