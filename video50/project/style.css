@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    margin: 10px;
+    overflow: hidden;
+    background-color: #f7f7f7; /* Similar to Chrome Dinosaur game */
+  }
+  
+  .background {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .tree {
+    position: absolute;
+    bottom: 0;
+    width: 350px; /* Adjust size as needed */
+    height: 500px; /* Adjust size as needed */
+    background: url('') no-repeat center / contain;
+    animation: moveTrees 15s linear infinite;
+  }
+  
+  /* Animation for horizontal movement */
+  @keyframes moveTrees {
+    from {
+      transform: translateX(100vw);
+    }
+    to {
+      transform: translateX(50px);
+    }
+  }
+  
